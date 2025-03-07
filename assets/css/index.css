@@ -437,10 +437,25 @@ ul {
   margin: 0.75rem;
 }
 .section.skill {
-  background: url("../images/skill.png");
+  background: url("../images/NicePose.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.section.skill::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* 黑色叠加层，0.3 表示 30% 的透明度 */
+  z-index: 1;
+}
+
+.section.skill > * {
+  position: relative;
+  z-index: 2; /* 确保内容在叠加层之上 */
 }
 .section.skill .skill-pane {
   padding-left: 12.5rem;
@@ -519,9 +534,9 @@ ul {
 .section.skill .skill-font {
   position: absolute;
   top: -4rem;
-  right: -4rem;
-  width: 16rem;
-  height: 16rem;
+  right: -2rem;
+  width: 18rem;
+  height: 18rem;
 }
 .section.skill .skill-animation p:nth-child(1) {
   -webkit-animation: show-skill 1s;
@@ -684,7 +699,7 @@ ul {
           animation-fill-mode: forwards;
 }
 .section.time-line {
-  background: url("../images/time-line.jpg");
+  background: url("../images/Tracks.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -703,7 +718,7 @@ ul {
   top: 50%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(45deg, #ff0000 0%, #ffb600 11%, #fff600 22%, #a5ff00 33%, #00a9ff 44%, #0400ff 55%, #8a00fc 66%, #ff00e9 77%, #ff0059 88%, #ff0000 100%);
+  background: linear-gradient(45deg, #12e78e 0%, #29cac2 11%, #1185f1 22%, #5348e9 33%, #4a08b4 44%, #f035c7 55%, #f04872 66%, #f14426 77%, #f3ad43 88%, #a5f73a 100%);
 }
 .section.time-line ul li {
   width: 100%;
