@@ -149,47 +149,6 @@
       }
     }
   }
-
-  // 联系方式
-  .contact {
-    .title {
-      font-size: 3rem !important;
-    }
-
-    // 联系方式面版
-    .contact-pane {
-      width: 32.5rem !important;
-      height: 18.75rem !important;
-
-      // 联系方式组件
-      .contact-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 25%;
-        height: 50%;
-        font-size: 1rem !important;
-
-        a {
-          width: 4rem !important;
-          height: 4rem !important;
-        }
-
-        img {
-          width: 4rem !important;
-          height: 4rem !important;
-        }
-      }
-    }
-
-    // 页脚
-    .footer {
-      p {
-        color: gray !important;
-      }
-    }
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -278,47 +237,6 @@
         &.sub-title {
           font-size: 0.6875rem !important;
         }
-      }
-    }
-  }
-
-  // 联系方式
-  .contact {
-    .title {
-      font-size: 3rem !important;
-    }
-
-    // 联系方式面版
-    .contact-pane {
-      width: 32.5rem !important;
-      height: 18.75rem !important;
-
-      // 联系方式组件
-      .contact-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 25%;
-        height: 50%;
-        font-size: 1rem !important;
-
-        a {
-          width: 4rem !important;
-          height: 4rem !important;
-        }
-
-        img {
-          width: 4rem !important;
-          height: 4rem !important;
-        }
-      }
-    }
-
-    // 页脚
-    .footer {
-      p {
-        color: gray !important;
       }
     }
   }
@@ -420,7 +338,7 @@ ul {
 
   // 技能介绍
   &.skill {
-    background: url("../images/skill.png");
+    background: url("../images/NicePose.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -478,7 +396,7 @@ ul {
 
   // 时间线
   &.time-line {
-    background: url("../images/time-line.jpg");
+    background: url("../images/Tracks.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -653,61 +571,6 @@ ul {
         &.sub-title {
           font-size: 1.375rem;
         }
-      }
-    }
-  }
-
-  // 联系方式
-  &.contact {
-    background: url("../images/contact.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: black;
-
-    .title {
-      font-size: 4rem;
-    }
-
-    // 联系方式面版
-    .contact-pane {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 75rem;
-      height: 37.5rem;
-      background-color: rgb(255, 255, 255, 0.5);
-      border-radius: 0.25rem;
-
-      // 联系方式组件
-      .contact-item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 25%;
-        height: 50%;
-        font-size: 1.25rem;
-
-        a {
-          width: 6.25rem;
-          height: 6.25rem;
-        }
-
-        img {
-          width: 6.25rem;
-          height: 6.25rem;
-          border-radius: 1rem;
-        }
-      }
-    }
-
-    // 页脚
-    .footer {
-      p {
-        font-size: 1.5rem;
-        color: white;
-        text-align: center;
       }
     }
   }
