@@ -1,15 +1,15 @@
 // 头像动画
 @keyframes user-img {
   0% {
-    box-shadow: 0px 0px 0px 0px rgb(103, 153, 254);
+    box-shadow: 0px 0px 0px 0px rgb(248, 161, 110);
   }
 
   50% {
-    box-shadow: 0px 0px 100px 10px rgb(103, 153, 254);
+    box-shadow: 0px 0px 100px 10px rgb(248, 161, 110);
   }
 
   100% {
-    box-shasdow: 0px 0px 0px 0px rgb(103, 153, 254);
+    box-shasdow: 0px 0px 0px 0px rgb(248, 161, 110);
   }
 }
 
@@ -300,7 +300,7 @@ ul {
 
   // 自我介绍
   &.self {
-    background: url("../images/background.png");
+    background: url("../images/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -309,12 +309,35 @@ ul {
     .user-img {
       width: 16rem;
       height: 16rem;
-      border: 0.25rem solid rgb(103, 153, 254);
+      border: 0.25rem solid rgb(248, 161, 110);
       border-radius: 50%;
-      // box-shadow: 0px 0px 100px 10px rgb(103, 153, 254);
+      // box-shadow: 0px 0px 100px 10px rgb(248, 161, 110);
       animation: user-img 5s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
+    }
+
+    //小图标
+    .social-links {
+      display: flex;           /* 使用 Flexbox 布局 */
+      justify-content: flex-end; /* 将内容靠右对齐 */
+      align-items: center;     /* 垂直居中 */
+      position: absolute;      /* 绝对定位 */
+      top: 40px;               /* 距离顶部 20px */
+      right: 120px;             /* 距离右侧 20px */
+    }
+    
+    .social-links a {
+      color: #f8fafc;          /* 默认颜色 */
+      margin-left: 40px;       /* 图标间距 */
+      font-size: 30px;         /* 图标大小 */
+      transition: color 0.3s;  /* 颜色过渡效果 */
+      display: flex;
+      text-decoration: none;   /* 去掉下划线 */
+    }
+    
+    .social-links a:hover {
+      color: #38bdf8;          /* 悬停颜色 */
     }
 
     // 标题
@@ -507,7 +530,7 @@ ul {
 
   // 爱好介绍
   &.hobby {
-    background: url("../images/P5R.jpg");
+    background: url("../images/Forest.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -529,26 +552,26 @@ ul {
       border-radius: 2rem;
 
       &.left {
-        background-color: rgb(255, 194, 204, 0.7);
+        background-color: rgb(250, 152, 165, 0.7);
 
         .art {
-          border: 0.25rem solid #f3add1;
+          border: 0.25rem solid #eb7e90;
         }
       }
 
       &.mid {
-        background-color: rgba(149, 255, 184, 0.7);
+        background-color: rgba(183, 109, 253, 0.7);
 
         .art {
-          border: 0.25rem solid #caf9d1;
+          border: 0.25rem solid #ac8bf8;
         }
       }
 
       &.right {
-        background-color: rgba(106, 178, 255, 0.7);
+        background-color: rgba(56, 146, 241, 0.7);
 
         .art {
-          border: 0.25rem solid #8ab4e9;
+          border: 0.25rem solid #61a2f1;
         }
       }
 
